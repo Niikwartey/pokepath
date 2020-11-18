@@ -1,0 +1,46 @@
+.Poke {
+  width: 5vw;
+  max-width: 20px;
+  min-width: 10px;
+  height: 5vw;
+  max-height: 20px;
+  min-height: 10px;
+  background-color: rgb(227, 227, 38);
+  border: 1px solid rgb(205, 205, 34);
+  border-radius: 100%;
+  animation: pulse 2s infinite;
+  transform: scale(1);
+}
+
+.Poke.blocked {
+  /* background-color: rgb(222, 88, 88); */
+  animation: wiggle 0.1s 2;
+}
+
+.Poke.sucess {
+  background-color: green;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.85);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.85);
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    transform: translateX(30%);
+  }
+  50% {
+    transform: translateX(-30%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,97 @@
+.Map {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.Map > div {
+  margin-bottom: 50px;
+}
+
+.Map > div.instructions {
+  margin-top: 50px;
+  padding: 20px;
+  color: #555;
+  font-size: 13px;
+  font-style: italic;
+  text-align: left;
+  background-color: #e9e9e9;
+  border-radius: 5px;
+}
+
+.Map > div.instructions p {
+  margin: 0;
+}
+
+.Map > div.instructions p > span {
+  margin: 0 3px;
+  color: rgb(28, 55, 28);
+  font-weight: 700;
+}
+
+.Map .sideLength > .input {
+  border: 1px solid;
+  display: flex;
+  margin-left: auto;
+  padding: 1px 3px;
+  justify-content: space-between;
+  width: 120px;
+  font-size: 13px;
+  border-radius: 5px;
+  margin-bottom: 3px;
+  opacity: 0.6;
+}
+
+.Map .sideLength > .input > input {
+  border: none;
+  outline: none;
+}
+
+.Map .sideLength > .hint {
+  display: block;
+  width: 100%;
+  text-align: right;
+  font-size: 10px;
+  font-style: italic;
+  color: rgb(28, 55, 28);
+  margin: 0 0 15px 0;
+}
+
+.Map div.grid {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 400px;
+  height: 100vw;
+  max-height: 400px;
+  justify-content: center;
+  background-color: rgb(215, 242, 174);
+  border: 1px solid rgb(215, 242, 174);
+  border-radius: 5px;
+}
+
+.Map > div.actions > .buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 220px;
+  margin: 0 auto;
+}
+
+.Map > div.actions .buttons > button {
+  padding: 6px 10px;
+  background-color: #e5e5e5;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  color: #555;
+}
+
+.Map > div.actions .buttons > button.go {
+  background-color: rgb(97, 148, 21);
+  color: white;
+}
+
+.Map > div.actions .buttons > button.go:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
